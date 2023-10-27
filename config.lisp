@@ -1,0 +1,2 @@
+
+(:COLOR-THEME "default-dark" :SDL2-FONT-SIZE 17 :ISEARCH-PREVIOUS-STRING "Tavb")
