@@ -1,0 +1,13 @@
+
+("(load \"~/.lem/init.lisp\")" "(vi-mode)" "(in-package async-process)
+                     "
+ "(create-process \"echo 2+1 | bc\")" "(defparameter p *)"
+ "(process-receive-output p)" "(defparameter ls (create-process \"ls -all\"))"
+ "(process-receive-output ls)" "(setf ls (create-process \"ls\"))"
+ "(process-receive-output ls)"
+ "(lem-base:insert (lem-base:current-point) \"hello world\")"
+ "(lem-base:insert-string (lem-base:current-point) \"hello world\")"
+ "(lem-base:insert-string (lem-base:current-point) \"xxx\")"
+ "(make-buffer \"wow\")" "(lem-base:make-buffer \"hello_world.txt\")"
+ "(concatenate 'string \"hello\" \"fucking\" \"world\")"
+ "(find-file #p\"PROCESS df\")" "(lem-base:find-file #p\"PROCESS df\")") 
