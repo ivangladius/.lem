@@ -15,12 +15,13 @@
 ;;  (lem-lisp-mode:lisp-load-file #P"/home/max/.lem/init.lisp"))
 ;;
 
-(load-theme "outrun-dark")
+(load-theme "emacs-dark")
 
 
 (lem-vi-mode:vi-mode)
 
-(define-key *global-keymap* "M-_" 'window-move-up)
+(define-key *global-keymap* "M-j" 'window-move-down)
+(define-key *global-keymap* "M-h" 'window-move-down)
 
 (define-key *global-keymap* "M-k" 'window-move-up)
 (define-key *global-keymap* "M-j" 'window-move-down)

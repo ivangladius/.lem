@@ -1,0 +1,16 @@
+
+mkdir $HOME/common-lisp
+cd $HOME/common-lisp
+git clone --recursive https://github.com/lem-project/lem.git
+
+sudo pacman -S sdl2_ttf sdl2_image
+
+
+sbcl
+* (ql:quickload "lem-sdl2")
+* (lem:lem)
+
+# create executable: 
+
+cd $HOME/common-lisp/lem/scripts
+sbcl --eval '(ql:quickload :lem-sdl2)' --load build.lisp
